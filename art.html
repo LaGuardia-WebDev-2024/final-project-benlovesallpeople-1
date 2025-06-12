@@ -6,17 +6,54 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
       /* Styling Only Related To THIS Page */
+      body {
+        background-color: #1a0a0a; 
+        color: #e0d3b6; 
+      }
+      
       .parent-flex {
         display: flex;
-        background-color: purple;
+        background-color: #2a1a1a; 
         justify-content: space-around;
         padding: 10px;
         margin-bottom: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 15px rgba(210, 105, 30, 0.3);
       }
 
-      .parent-flex img {
-        max-width: 30%;
+      .video-container {
+        position: relative;
+        width: 45%;
+        padding-bottom: 25.31%; 
+        height: 0;
+        overflow: hidden;
+      }
+      
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
         border-radius: 10px;
+        border: 1px solid #b38b6d; 
+      }
+      
+      h1 {
+        color: #d4af37; 
+        text-shadow: 1px 1px 2px #000;
+      }
+      
+      .nav {
+        background-color: #000; 
+      }
+      
+      .nav a {
+        color: #d4af37 !important; 
+      }
+      
+      .nav a.active {
+        background-color: #3a2a2a !important; 
       }
     </style>
   </head>
@@ -25,7 +62,7 @@
     <ul class="nav">
       <li><a href="index.html">Home</a></li>
       <li><a href="aboutme.html">About Me</a></li>
-      <li><a class="active" href="art.html">Art</a></li>
+      <li><a class="active" href="art.html">Music</a></li>
       <li><a href="resume.html">Resume</a></li>
       <li style="float: right">
         <a target="_blank" href=""
@@ -43,24 +80,24 @@
       </li>
     </ul>
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>My Art</h1>
+    <h1>My Performances</h1>
 
     <div class="parent-flex">
-      <img
-        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-      />
-      <img
-        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
-      />
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/B-V1VrGcguA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Gy3eGZkU2sM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
 
     <div class="parent-flex">
-      <img
-        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
-      />
-      <img
-        src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/IMG_3767.png?v=1746635392409"
-      />
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/40mEPGIMsTg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/nK3QK33yPfo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
   </body>
 </html>
