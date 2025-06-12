@@ -6,6 +6,68 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
       /* Styling Only Related To THIS Page */
+      body {
+        background-color: #1a0a0a; 
+        color: #e0d3b6; 
+      }
+      
+      h1 {
+        color: #d4af37; 
+        text-shadow: 1px 1px 2px #000;
+        text-align: center;
+      }
+      
+      .intro-text {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #2a1a1a; 
+        border-left: 3px solid #b38b6d; 
+        border-radius: 0 5px 5px 0;
+      }
+      
+      .intro-text a {
+        color: #d4af37; 
+        text-decoration: none;
+      }
+      
+      .intro-text a:hover {
+        text-decoration: underline;
+      }
+      
+      .resume-container {
+        margin: 20px auto;
+        max-width: 800px;
+        box-shadow: 0 0 15px rgba(210, 105, 30, 0.3); 
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: #2a1a1a;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      .resume-alternative {
+        color: #e0d3b6;
+        margin-top: 20px;
+      }
+      
+      .nav {
+        background-color: #000; 
+      }
+      
+      .nav a {
+        color: #d4af37 !important; 
+      }
+      
+      .nav a.active {
+        background-color: #3a2a2a !important; 
+      }
+      
+      @media (max-width: 600px) {
+        .resume-container iframe {
+          height: 400px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -13,7 +75,7 @@
     <ul class="nav">
       <li><a href="index.html">Home</a></li>
       <li><a href="aboutme.html">About Me</a></li>
-      <li><a href="art.html">Art</a></li>
+      <li><a href="art.html">Music</a></li>
       <li><a class="active" href="resume.html">Resume</a></li>
       <li style="float: right">
         <a target="_blank" href=""
@@ -32,6 +94,18 @@
     </ul>
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
     <h1>Resume</h1>
+    
+    <div class="intro-text">
+      <p>Below you'll find my professional resume documenting my musical education, performance experience, and achievements. This PDF contains my complete work history, skills, and references.</p>
+      <p>For your convenience, the resume is displayed directly in this webpage, but you can also <a href="https://cdn.glitch.global/da3005be-0964-4946-bc92-6aa8abd82935/B%20Sherman%20CV.docx.pdf?v=1749687053069" download>download the PDF</a> if needed.</p>
+    </div>
+    
+    <div class="resume-container">
+      <iframe src="https://docs.google.com/viewer?url=https://cdn.glitch.global/da3005be-0964-4946-bc92-6aa8abd82935/B%20Sherman%20CV.docx.pdf?v=1749687053069&embedded=true" width="100%" height="600px" style="border: none;">
+        <p class="resume-alternative">Your browser doesn't support PDF viewing. Please <a href="https://cdn.glitch.global/da3005be-0964-4946-bc92-6aa8abd82935/B%20Sherman%20CV.docx.pdf?v=1749687053069" download>download the PDF</a> to view it.</p>
+      </iframe>
+      <p class="resume-alternative">If the resume doesn't display above, <a href="https://cdn.glitch.global/da3005be-0964-4946-bc92-6aa8abd82935/B%20Sherman%20CV.docx.pdf?v=1749687053069" download>click here to download it</a>.</p>
+    </div>
 
   </body>
 </html>
